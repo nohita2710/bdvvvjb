@@ -1,0 +1,21 @@
+/* Speed up login lock banner */
+.progress-loading__wrapper {
+	transition: height 550ms ease, -webkit-transform 400ms ease;
+	transition: height 550ms ease, transform 400ms ease;
+	transition: height 550ms ease, transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+/* fixes list-container-sticky */
+.movements-wrapper {
+	overflow: initial !important;
+}
+
+.background-blur {
+	background-color: rgba(var(--force-touch-background-color, var(--surface-default-rgb)), 0.3) !important;
+	backdrop-filter: blur(8px) contrast(60%);
+	-webkit-backdrop-filter: blur(8px) contrast(60%);
+}
+
+.force-touch {
+	padding-top: calc(16px + env(safe-area-inset-top));
+}
